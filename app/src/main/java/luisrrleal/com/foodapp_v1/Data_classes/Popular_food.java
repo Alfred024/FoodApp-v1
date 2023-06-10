@@ -1,19 +1,15 @@
-package luisrrleal.com.foodapp_v1.Domain;
+package luisrrleal.com.foodapp_v1.Data_classes;
 
-import android.app.Fragment;
-
-import java.io.Serializable;
-//Clase que sirve como una interfaz
-//implements Serializable --> Se lo quite a la clase
+//Clase que proporciona los datos de las cards a través de métodos
 public class Popular_food {
     private String title;
     private String description;
     private String picUrl;
-    private double price;
+    private String price;
     private int numberinCart;
     //private int time;
 
-    public Popular_food(String title, String description, String picUrl, double price) {
+    public Popular_food(String title, String description, String picUrl, String price) {
         this.title = title;
         this.description = description;
         this.picUrl = picUrl;
@@ -41,10 +37,10 @@ public class Popular_food {
         this.picUrl = picUrl;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
