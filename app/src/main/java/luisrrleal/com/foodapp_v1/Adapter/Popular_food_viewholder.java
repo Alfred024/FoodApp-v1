@@ -15,6 +15,9 @@ import luisrrleal.com.foodapp_v1.R;
 
 public class Popular_food_viewholder extends RecyclerView.ViewHolder {
 
+    TextView card_title2 = (TextView)itemView.findViewById(R.id.food_title_txt2);
+    TextView card_price2 = (TextView)itemView.findViewById(R.id.food_price_txt2);
+    ImageView card_img2 = (ImageView) itemView.findViewById(R.id.card_id2);
     TextView card_title = (TextView)itemView.findViewById(R.id.food_title_txt);
     TextView card_price = (TextView)itemView.findViewById(R.id.food_price_txt);
     RelativeLayout card_img = (RelativeLayout) itemView.findViewById(R.id.card_id);
@@ -25,8 +28,8 @@ public class Popular_food_viewholder extends RecyclerView.ViewHolder {
     }
 
     public void render_card(Popular_food popular_food_item){
-        card_title.setText(popular_food_item.getTitle());
-        card_price.setText(popular_food_item.getPrice());
-        card_img.setBackgroundResource(popular_food_item.getPicUrl());
+        card_title2.setText(popular_food_item.getTitle());
+        card_price2.setText(popular_food_item.getPrice());
+        card_img2.setBackgroundResource(popular_food_item.getPicUrl());
     }
 }

@@ -79,7 +79,7 @@ public class Home_Fragment extends Fragment{
 
         //Get the recycelrView of popular food and render it in the fragment
         recyclerView_food = (RecyclerView) getView().findViewById(R.id.recyclerView_food_id);
-        LinearLayoutManager rv_layoutManager2 = new LinearLayoutManager(getView().getContext(), LinearLayoutManager.HORIZONTAL,false);
+        LinearLayoutManager rv_layoutManager2 = new LinearLayoutManager(getView().getContext(), LinearLayoutManager.VERTICAL,false);
         recyclerView_food.setLayoutManager(rv_layoutManager2);
         recyclerView_food.setAdapter(new Popular_food_adapter(cards));
     }

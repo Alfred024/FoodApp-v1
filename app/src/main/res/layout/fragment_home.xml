@@ -81,10 +81,21 @@
 
     <!-- Constraint Layout for the Popular Food Section-->
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popular_food_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="280sp">
 
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_food_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <!--
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
@@ -102,7 +113,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4" /> -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

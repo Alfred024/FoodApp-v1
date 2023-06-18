@@ -20,7 +20,7 @@ public class Popular_food_adapter extends RecyclerView.Adapter<Popular_food_view
     public Popular_food_viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater li = LayoutInflater.from(parent.getContext());
         Popular_food_viewholder res_layout;
-        res_layout  = new Popular_food_viewholder(li.inflate(R.layout.food_info_layout, parent, false));
+        res_layout  = new Popular_food_viewholder(li.inflate(R.layout.food_info_layout_vertical, parent, false));
         return res_layout;
     }
 
